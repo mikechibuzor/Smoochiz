@@ -1,0 +1,94 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+nav {
+  height: 8vh;
+}
+.nav-links a {
+  position: relative;
+}
+
+nav .nav-links a {
+  color: #999999;
+}
+
+nav .nav-links a:hover {
+  color: #f04c39;
+}
+
+nav .nav-links a.active::before {
+  width: 100%;
+}
+
+nav .nav-links a.active {
+  color: #f04c39;
+}
+
+.nav-links a::before {
+  position: absolute;
+  content: "";
+  height: 0.1rem;
+  right: 0;
+  width: 0%;
+  transition: all 0.3s linear;
+  bottom: -2px;
+}
+
+nav .nav-links a::before {
+  background: #f04c39;
+}
+.last .nav-links a::before {
+  background: white;
+}
+
+.nav-links a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.first-view {
+  height: 60vh;
+}
+/* main > * {
+  height: 85vh;
+} */
+
+.form-element textarea {
+  height: 30vh;
+}
+
+input[type="button"] {
+  background: linear-gradient(90deg, #f04c39 50.19%, #f6a73e 100%);
+  background-origin: border-box;
+  transition: background 0.3s linear;
+}
+input[type="button"]:hover {
+  background: #000;
+}
+
+.one svg {
+  background: white;
+  stroke: #f04c39;
+  border-radius: 50%;
+  padding: 0.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.one svg.insta {
+  fill: #f04c39;
+  stroke: #f04c39;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  img {
+    object-fit: cover;
+  }
+}
