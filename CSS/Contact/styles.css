@@ -91,4 +91,14 @@ input[type="button"]:hover {
   img {
     object-fit: cover;
   }
+  nav.resp {
+    height: 30vh;
+    border: none;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  nav.resp {
+    height: 34vh;
+  }
 }

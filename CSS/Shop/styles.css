@@ -121,4 +121,15 @@ input[type="button"] {
   .single-product {
     height: 42vh;
   }
+
+  nav.resp {
+    height: 30vh;
+    border: none;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  nav.resp {
+    height: 34vh;
+  }
 }

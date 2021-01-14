@@ -89,4 +89,14 @@ nav .nav-links a::before {
   .story {
     height: 40vh;
   }
+  nav.resp {
+    height: 30vh;
+    border: none;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  nav.resp {
+    height: 34vh;
+  }
 }
